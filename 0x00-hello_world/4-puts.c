@@ -1,5 +1,7 @@
 #include <stdio.h>
-/** this program outputs a statement */
+/** 
+* this program outputs a statement
+*/
 int main(void)
 {
 	puts("Programming is like building a multilingual puzzle\n");
