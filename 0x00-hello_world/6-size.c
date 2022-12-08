@@ -1,4 +1,4 @@
-# include <stdio.h>
+#include <stdio.h>
 /**
  * main - prints c datatypes memory size
  *
@@ -6,9 +6,14 @@
  */
 int main(void)
 {
-	puts("Size of a char: " + sizeof(char));
-	puts("Size of an int: " + sizeof(int));
-	puts("Size of a long int: " +  sizeof(int));
-	puts("Size of a long long int: " + sizeof(long long int));
-	puts("Size of a float: " + sizeof(float));
+	int i;
+    	float f;
+    	long l;
+	long long ll;
+    	char c;
+	printf("Size of char: %zu bytes\n",  sizeof(c));
+	printf("Size of int: %zu bytes\n",  sizeof(i));
+	printf("Size of long: %zu bytes\n",  sizeof(l));
+	printf("Size of long long: %zu bytes\n",  sizeof(ll));
+	printf("Size of int: %zu bytes\n",  sizeof(f));
 }
