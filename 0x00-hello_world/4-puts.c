@@ -1,5 +1,5 @@
 #include <stdio.h>
-/** 
+/**
 * this program outputs a statement
 */
 int main(void)
