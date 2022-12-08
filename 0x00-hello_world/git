@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
 git commit -m $1
-git push https://Abel-D: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@github.com/Abel-D/alx-system_engineering-devops.git 
+git push https://Abel-D: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@github.com/Abel-D/alx-system_engineering-devops.git 
