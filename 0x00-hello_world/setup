@@ -1,0 +1,5 @@
+#!/bin/bash
+touch $file
+echo #!/bin/bash> $file
+chmod u+x $file
+nano $file
