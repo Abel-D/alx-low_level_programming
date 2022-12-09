@@ -1,4 +1,4 @@
-#include <studlib.h>
+#include <stdlib.h>
 #include <time.h>
 /**
  * main - checks no if greater than o and less than 6
