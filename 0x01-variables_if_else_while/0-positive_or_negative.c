@@ -16,7 +16,7 @@ int main(void)
 		printf("%*s", n, "is positive\n");
 	else if (n < 0)
 		printf("%*s", n, "is negative\n");
-	else if (n = 0)
+	else
 		printf("%*s", n, "is zero\n");
 	return (0);
 }
