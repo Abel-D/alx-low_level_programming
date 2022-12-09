@@ -8,11 +8,10 @@ int main(void)
 {
 	char c, u;
 
-	do{
+	do {
 		putchar(c);
 		++c;
-	}
-	while (c <= 'z');
+	} while (c <= 'z');
 	if (c == 'Z')
 	{
 		for (u = 'A'; u <= 'Z'; ++u)
@@ -20,5 +19,6 @@ int main(void)
 			putchar(u);
 		}
 	}
+	putchar('\n');
 	return (0);
 }

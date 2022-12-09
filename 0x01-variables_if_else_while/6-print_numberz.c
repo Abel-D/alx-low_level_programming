@@ -1,4 +1,6 @@
 #include <stdio.h>
+
+void print(int i);
 /**
  * main - list mos
  *
@@ -6,16 +8,17 @@
  */
 int main(void)
 {
-	int x = 0;
-
-	while (x < 10)
-	{
-		if (x == 9)
-		{
-			putchar('\n');
-		}
-		putchar(x);
-		x++;
-	}
+	int x = 123456789;
+	putchar('0');
+	print(x);
 	return (0);
+}
+
+/**
+ * print - print int using putchar
+ */
+void print(int n)
+{
+print(n / 10);
+putchar(n%10 + '0');
 }
