@@ -1,7 +1,7 @@
 #include <stdio.h>
 int print_int(int i);
 /**
- * main - list mos
+ * main - list digits 0-9
  *
  * Return: 0 if success
  */
@@ -13,7 +13,7 @@ int main(void)
 	while (x < 10)
 	{
 	print_int(x);
-	x++;
+	++x;
 	}
 	return (0);
 }

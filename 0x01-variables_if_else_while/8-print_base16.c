@@ -15,7 +15,7 @@ int main(void)
 	while (c <= 'f')
 	{
 		putchar(c);
-		c++;
+		++c;
 	}
 	return (0);
 }
