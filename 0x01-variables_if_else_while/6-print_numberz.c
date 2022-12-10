@@ -11,7 +11,6 @@ int main(void)
 
 	putchar('0');
 	print_int(x);
-	putchar('\n');
 	return (0);
 }
 
