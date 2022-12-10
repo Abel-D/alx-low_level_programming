@@ -1,10 +1,35 @@
 #include <stdio.h>
+int print_int(int i);
 /**
- * main - writes base 16 int
+ * main - list mos
  *
  * Return: 0 if success
  */
 int main(void)
 {
-	return(0);
+	int x = 123456789;
+	char c = 'a';
+
+	putchar('0');
+	print_int(x);
+	while (c <= 'f')
+	{
+		putchar(c);
+		c++;
+	}
+	return (0);
+}
+
+/**
+ * print_int - print int using putchar
+ * @n: integer to parse
+ *
+ * Return: 0 if success
+ */
+int print_int(int n)
+{
+	if (n / 10)
+		print_int(n / 10);
+	putchar(n % 10 + '0');
+	return (0);
 }

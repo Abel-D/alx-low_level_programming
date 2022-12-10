@@ -7,10 +7,14 @@ int print_int(int i);
  */
 int main(void)
 {
-	int x = 123456789;
+	int x = 1;
 
-	putchar(' '+'0');
+	putchar('0');
+	while (x < 10)
+	{
 	print_int(x);
+	x++;
+	}
 	return (0);
 }
 
