@@ -1,5 +1,4 @@
 #include <stdio.h>
-int print_int(int i);
 /**
  * main - list digits 0-9
  *
@@ -7,28 +6,14 @@ int print_int(int i);
  */
 int main(void)
 {
-	int x = 1;
+	int x = 0;
 
-	putchar('0');
-	while (x < 10)
+	for (x = 0; x < 10; x++)
 	{
-	print_int(x);
-	++x;
+	if (x / 10)
+		continue;
+	putchar(x % 10 + '0');
 	}
-	print_int(0);
-	return (0);
-}
-
-/**
- * print_int - print int using putchar
- * @n: integer to parse
- *
- * Return: 0 if success
- */
-int print_int(int n)
-{
-	if (n / 10)
-		print_int(n / 10);
-	putchar(n % 10 + '0');
+	putchar('\n');
 	return (0);
 }

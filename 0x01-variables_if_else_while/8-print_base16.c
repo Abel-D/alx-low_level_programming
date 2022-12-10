@@ -1,5 +1,4 @@
 #include <stdio.h>
-int print_int(int i);
 /**
  * main - list mos
  *
@@ -7,30 +6,23 @@ int print_int(int i);
  */
 int main(void)
 {
-	int x = 123456789;
 	char c = 'a';
 
-	putchar('0');
-	print_int(x);
-	while (c <= 'f')
+	for (int x = 0; x < 10; x++)
 	{
-		putchar(c);
-		++c;
-	}
-	print_int(0);
-	return (0);
-}
+		if (x / 10)
+			continue;
+		putchar(x % 10 + '0');
 
-/**
- * print_int - print int using putchar
- * @n: integer to parse
- *
- * Return: 0 if success
- */
-int print_int(int n)
-{
-	if (n / 10)
-		print_int(n / 10);
-	putchar(n % 10 + '0');
+		if (x == 9)
+		{
+			while (c <= 'f')
+			{
+			putchar(c);
+			++c;
+			}
+		}
+	}
+	putchar('\n');
 	return (0);
 }
