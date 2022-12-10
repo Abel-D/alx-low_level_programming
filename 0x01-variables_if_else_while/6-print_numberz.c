@@ -9,8 +9,9 @@ int main(void)
 {
 	int x = 123456789;
 
-	putchar(' 0');
+	putchar('0');
 	print_int(x);
+	putchar('\n');
 	return (0);
 }
 
