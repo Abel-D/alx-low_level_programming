@@ -15,6 +15,7 @@ int main(void)
 	print_int(x);
 	++x;
 	}
+	print_int(0);
 	return (0);
 }
 

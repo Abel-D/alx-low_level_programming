@@ -17,6 +17,7 @@ int main(void)
 		putchar(c);
 		++c;
 	}
+	print_int(0);
 	return (0);
 }
 
