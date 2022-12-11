@@ -6,17 +6,30 @@
  */
 int main(void)
 {
-	int x = 0;
+	int i, j;
 
-	for (x = 0; x < 10; x++)
+	for (i = 0; i < 10; i++)
 	{
-		if (x / 10)
-			continue;
-	putchar(x % 10 + '0');
-		if (x != 9)
+		for (j = 0; j <= 9; j++)
 		{
-			putchar(' ');
+			if (i < j && i != j)
+			{
+				if (i / 10)
+					continue;
+			putchar(i % 10 + '0');
+				if (j / 10)
+					continue;
+			putchar(j % 10 + '0');
+			if (i == 8)
+			{
+				if (j == 9)
+				{
+					break;
+				}
+			}
 			putchar(',');
+			putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
