@@ -18,10 +18,10 @@ int main(void)
 	x = n % 10;
 	printf("%d", x);
 	if (x > 5)
-		printf("%s\n", " and is greater than 5\n");
-	else if (x < 5 || x < 0)
-		printf("%s\n", " and is less than 6 and not 0\n");
+		printf("%s\n", " and is greater than 5");
 	else if (x == 0)
-		printf("%s\n", " is zero\n");
+		printf("%s\n", " is zero");
+	else if (x < 5 || x < 0)
+                printf("%s\n", " and is less than 6 and not 0");
 	return (0);
 }
