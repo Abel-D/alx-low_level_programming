@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - list digits 0-9 with comma and space
+ * main - list digits 0-9
  *
  * Return: 0 if success
  */
