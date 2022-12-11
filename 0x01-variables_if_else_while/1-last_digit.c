@@ -20,8 +20,8 @@ int main(void)
 	if (x > 5)
 		printf("%s\n", " and is greater than 5");
 	else if (x == 0)
-		printf("%s\n", " is zero");
+		printf("%s\n", " and is zero");
 	else if (x < 5 || x < 0)
-                printf("%s\n", " and is less than 6 and not 0");
+		printf("%s\n", " and is less than 6 and not 0");
 	return (0);
 }
