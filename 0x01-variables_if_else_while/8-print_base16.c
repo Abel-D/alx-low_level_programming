@@ -7,8 +7,9 @@
 int main(void)
 {
 	char c = 'a';
+	int x;
 
-	for (int x = 0; x < 10; x++)
+	for (x = 0; x < 10; x++)
 	{
 		if (x / 10)
 			continue;
