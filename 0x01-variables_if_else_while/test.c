@@ -18,7 +18,6 @@ int main(void)
 				{
 				if (x > j)
 				{
-				putchar(' ');
 				if (i / 10)
 					continue;
 				putchar(i % 10 + '0');
@@ -39,10 +38,10 @@ int main(void)
 					break;
 				}
 				else
+				{
 					putchar(',');
-				}
-				}
-			}
+					putchar(' ');
+				}}}}
 		}
 	}
 	return (0);

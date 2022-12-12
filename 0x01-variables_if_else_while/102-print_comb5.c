@@ -16,32 +16,32 @@ int main(void)
 			{
 				for (x = 1; x <= 9; x++)
 				{
-					if (x > j)
-					{
-					putchar(' ');
-					if (i / 10)
-						continue;
-					putchar(i % 10 + '0');
-					if (j / 10)
-						continue;
-					putchar(j % 10 + '0');
-					putchar(' ');
-					if (k / 10)
-						continue;
-					putchar(k % 10 + '0');
-					if (x / 10)
-						continue;
-					putchar(x % 10 + '0');
-					if (i == 9 && j == 8 && k == 9 && x == 9)
-					{
-						putchar('\n');
-						break;
-					}
-					else
-					putchar(',');
-					}
+				if (x > j)
+				{
+				if (i / 10)
+					continue;
+				putchar(i % 10 + '0');
+				if (j / 10)
+					continue;
+				putchar(j % 10 + '0');
+				putchar(' ');
+				if (k / 10)
+					continue;
+				putchar(k % 10 + '0');
+
+				if (x / 10)
+					continue;
+				putchar(x % 10 + '0');
+				if (i == 9 && j == 8 && k == 9 && x == 9)
+				{
+					putchar('\n');
+					break;
 				}
-			}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}}}}
 		}
 	}
 	return (0);
