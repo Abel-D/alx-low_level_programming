@@ -6,31 +6,47 @@
  */
 int main(void)
 {
-	int i, j;
+	int i, j, k, x;
 
-	for (i = 0; i < 10; i++)
+	while (i <= 9)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			if (i < j && i != j)
-			{
-				if (i / 10)
-					continue;
-			putchar(i % 10 + '0');
-				if (j / 10)
-					continue;
-			putchar(j % 10 + '0');
-			if (i == 8)
-			{
-				if (j == 9)
-				{
-					break;
+			for (x = 0; i < 10; i++)
+        		{
+                		for (k = 0; j <= 9; j++)
+                		{
+					putchar(' ');
+                		        if (i / 10)
+                               			 continue;
+		                        putchar(i % 10 + '0');
+                		        if (j / 10)
+                                		continue;
+		                        putchar(j % 10 + '0');
+
+                		        putchar(' ');
+					if (x / 10)
+						continue;
+					putchar(i % 10 + '0');
+					if (k / 10)
+						continue;
+					putchar(j % 10 + '0');
+					if (i == 9)
+					{
+						if (j == 9)
+						{
+							if(k == 9)
+							{
+								break;
+							}
+						}
+					}
 				}
 			}
-			putchar(',');
-			putchar(' ');
-			}
+		i++;
 		}
+		putchar(',');
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
