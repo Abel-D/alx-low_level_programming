@@ -6,12 +6,13 @@
  */
 int main(void)
 {
-	int x, k = 1;
-	int i, j = 0;
-
+	int x = 1;
+	int i = 0;
+	int k = i;
+	int j = 0;
 	while (i <= 9)
 	{
-	while (j <= 9)
+	while (j <= 8)
 	{
 		while (k <= 9)
 		{
@@ -27,12 +28,11 @@ int main(void)
 
 				if (k / 10)
 					continue;
-				putchar(k);
+/*				putchar(k);
 				if (x / 10)
 					continue;
 				putchar(x);
-				putchar(',');
-				if (i == 9 && j == 8)
+*/				if (i == 9 && j == 8)
 				{
 					if (k == 9)
 					{
@@ -40,6 +40,7 @@ int main(void)
 							break;
 					}
 				}
+				putchar(',');
 				x++;
 			}
 			k++;
