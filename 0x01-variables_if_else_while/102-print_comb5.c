@@ -14,9 +14,7 @@ int main(void)
 		{
 			for (k = i; k <= 9; k++)
 			{
-				for (x = 1; x <= 9; x++)
-				{
-				if (x > j)
+				for (x = 0; x <= 9; x++)
 				{
 				if (i / 10)
 					continue;
@@ -41,7 +39,7 @@ int main(void)
 				{
 					putchar(',');
 					putchar(' ');
-				}}}}
+				}}}
 		}
 	}
 	return (0);
