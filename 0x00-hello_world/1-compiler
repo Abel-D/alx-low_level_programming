@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -C -g $CFILE -o ${CFILE%?}o
+gcc -march=i686 -mtune=generic -m32 -ffreestanding -nostdlib -nostartfiles $CFILE -o ${CFILE%?}o
