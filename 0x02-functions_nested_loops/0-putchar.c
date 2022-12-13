@@ -4,7 +4,7 @@
  *
  * Return: 0 if success
  */
-int main(void)
+int print_putchar(void)
 {
 	char c[8] = "_putchar";
 	int i;
