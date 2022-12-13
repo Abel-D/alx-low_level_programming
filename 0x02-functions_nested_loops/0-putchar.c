@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
  * main - print _putchar
+ *
+ * Return: 0 if success 
  */
-int main()
+int main(void)
 {
 	char c[8] = "_putchar";
 	int i;
