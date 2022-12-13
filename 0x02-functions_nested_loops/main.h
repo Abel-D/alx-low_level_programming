@@ -1,5 +1,7 @@
-#include "1-alphabet.c"
-#include "0-putchar.c"
-/* abstract print alpha interface */
-void print_alphabet(void);
-int print_putchar(void);
+#ifndef MAIN
+#define MAIN
+int print_alphabet(void);
+#endif
+
+
+
