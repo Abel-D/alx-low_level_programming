@@ -8,8 +8,13 @@
  */
 int _abs(int x)
 {
-	int x;
+	int res;
 
-	x = abs(x);
-	return (x);
+	if (x > 0)
+		res = x;
+	if (x < 0)
+		res = x * -1;
+	else if (x == 0)
+		res = 0;
+	return (res);
 }

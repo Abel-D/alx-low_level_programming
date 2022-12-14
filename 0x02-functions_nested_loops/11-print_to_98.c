@@ -5,27 +5,25 @@
  */
 void print_to_98(int n)
 {
-	int i = n;
-
 	if (n >= 98)
 	{
-		while (i >= 98)
+		while (n >= 98)
 		{
-			if (i / 10)
+			if (n / 10)
 				continue;
-			putchar(i % 10 + '0');
-			i--;
+			putchar(n % 10 + '0');
+			n--;
 		}
 		putchar('\n');
 	}
 	else if (n <= 98)
 	{
-		while (i <= 98)
+		while (n <= 98)
 		{
-		if (i / 10)
+		if (n / 10)
 			continue;
-		putchar(i % 10 + '0');
-		i++;
+		putchar(n % 10 + '0');
+		n++;
 		}
 		putchar('\n');
 	}
