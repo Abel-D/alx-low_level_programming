@@ -18,7 +18,7 @@ void print_to_98(int n)
 		}
 		putchar('\n');
 	}
-	else if (i <= 98)
+	else if (n <= 98)
 	{
 		while (i <= 98)
 		{
