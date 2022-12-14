@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * int print_last_digit - print last digit of integer
+ * print_last_digit - print last digit of integer
  * @x: input integer
  * Return: last digit val
  */

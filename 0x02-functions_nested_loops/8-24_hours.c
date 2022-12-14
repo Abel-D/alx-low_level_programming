@@ -16,7 +16,7 @@ void jack_bauer(void)
 		{
 			for (s = 0; s < 6; s++)
 			{
-				for ( i = 0; i <=9; i++)
+				for (i = 0; i <= 9; i++)
 				{
 					if (h / 10)
 						continue;
@@ -29,8 +29,8 @@ void jack_bauer(void)
 						continue;
 					putchar(s % 10 + '0');
 					if (i / 10)
-                                                continue;
-                                        putchar(i % 10 + '0');
+						continue;
+					putchar(i % 10 + '0');
 					putchar('\n');
 				}
 			}
