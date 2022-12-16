@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 /**
  * _isupper - check for uppercase
  * @c: input val
