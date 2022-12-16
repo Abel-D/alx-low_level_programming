@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * print_numbers -
+ * print_numbers - print nos 0-9
+ * Description: print nos 0-9
  */
 void print_numbers(void)
 {
