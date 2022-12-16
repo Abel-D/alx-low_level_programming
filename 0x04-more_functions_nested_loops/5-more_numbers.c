@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 /**
  * more_numbers - print nos
  */
@@ -9,12 +8,11 @@ void more_numbers(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		while (j < 10)
+		for (j = 0; j < 10; j++)
 		{
-			if (i / 10)
+			if (j / 10)
 				continue;
-			putchar(i + '0');
-			i++;
+			putchar(j + '0');
 		}
 		j = 0;
 		putchar('\n');
