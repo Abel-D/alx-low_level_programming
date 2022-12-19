@@ -2,16 +2,17 @@
 
 /**
  * print_rev - print str in reverse
- * s: input string
+ * @s: input string
  */
 void print_rev(char *s)
 {
-	int z = sizeof(s);
-	int i = z - 1;
+	char *z;
+	int i = sizeof(s);
 
+	z = s;
 	while (i >= 0)
 	{
-		putchar(s[i]);
+		putchar(z[i]);
 		i--;
 	}
 	putchar('\n');
