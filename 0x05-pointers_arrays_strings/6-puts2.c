@@ -15,4 +15,5 @@ void puts2(char *str)
 		putchar(p[i] + '\0');
 		i = i + 2;
 	}
+	putchar('\n');
 }
