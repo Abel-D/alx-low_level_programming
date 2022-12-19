@@ -18,4 +18,5 @@ void puts_half(char *str)
 	{
 		putchar(p[i] + '\0');
 	}
+	putchar('\n');
 }
