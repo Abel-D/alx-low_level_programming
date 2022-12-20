@@ -12,5 +12,5 @@ int main(void)
 
 	srand(seed);
 
-	return rand();
+	putchar(rand() + '\0');
 }
