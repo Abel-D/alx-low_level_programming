@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <time.h>
-#include <cstdlib>
+#include<stdlib.h>
 /**
  * main - generate random code
  *
@@ -8,4 +8,9 @@
  */
 int main(void)
 {
-	return (srand(time(0)));
+	int seed = time(0);
+
+	srand(seed);
+
+	return rand();
+}
