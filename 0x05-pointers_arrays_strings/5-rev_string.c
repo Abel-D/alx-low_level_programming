@@ -1,15 +1,17 @@
 #include <stdio.h>
-
+#include <string.h>
 /**
- * print_rev - print str in reverse
+ * rev_string - print str in reverse
  * @s: input string
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	char *z;
-	int i = sizeof(s);
+	int i, len;
 
 	z = s;
+	len = strlen(s);
+	i = len;
 	while (i >= 0)
 	{
 		putchar(z[i]);

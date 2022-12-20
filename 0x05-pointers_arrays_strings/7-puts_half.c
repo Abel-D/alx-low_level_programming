@@ -14,11 +14,14 @@ void puts_half(char *str)
 		half = (len - 1) / 2;
 	else
 		half = len / 2;
+	printf("%d", len);
+	i = half;
 	if (len != 1)
 	{
-		for (i = half + 1; p[i] != '\0'; i++)
+		while (p[i] != '\0')
 		{
 			putchar(p[i] + '\0');
+			i++;
 		}
 	}
 	putchar('\n');
