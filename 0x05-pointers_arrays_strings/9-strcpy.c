@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 /**
  * char *_strcpy - copy string from src to destn
  * @dest: destination address
@@ -9,9 +10,15 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	int length, i = 0;
-	char* p;
+	char *tmp;
+	int length;
 
-	strcpy(*src , *dest);
-	return *dest;
+	tmp = dest;
+	while (*src++ != '\0')
+		length++;
+	tmp = (char*) malloc((length + 1) * sizeof(char));
+
+	strcpy(tmp, src);
+
+	return tmp;
 }
