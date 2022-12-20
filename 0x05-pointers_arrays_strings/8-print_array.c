@@ -6,24 +6,16 @@
  */
 void print_array(int *a, int n)
 {
-	int i = 0, j;
-	int *s;
+	int j = 0;
 
-	s = a;
-	for ( j = 0; j < n; j++)
+	while (j < n)
 	{
-		while (s[j] != '\0')
-		{
-			if ( s[j][i] / 10)
-				continue;
-			putchar(s[j][i] % 10 + '0');
-			i++;
-		}
+		printf("%d", *(a + j));
 		j++;
 		if (j < n)
 		{
-			putchar(' ');
 			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
