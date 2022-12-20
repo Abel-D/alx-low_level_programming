@@ -11,11 +11,10 @@
 char *_strcpy(char *dest, char *src)
 {
 	char *tmp;
-	int length = 1;
+	int length = strlen(src);
 
 	tmp = dest;
-	while (*src++ != '\0')
-		length++;
+
 	tmp = malloc(length + 1);
 
 	strcpy(tmp, src);
