@@ -13,4 +13,5 @@ int main(void)
 	srand(seed);
 
 	putchar(rand() + '\0');
+	return (0);
 }
