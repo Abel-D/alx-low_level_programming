@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * _memcpy - copy char from src to dest
  * @src: source address
@@ -14,5 +15,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		*dest++ = *src++;
 		n--;
 	}
+	putchar('\n');
 	return (dest);
 }
