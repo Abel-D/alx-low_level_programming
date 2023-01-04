@@ -7,18 +7,17 @@
  */
 int factorial(int n)
 {
-	int i, result = 1;
+	int result = 1;
 
 	if (n < 0)
 		result = -1;
 	else if (n == 0)
-		result = 1;
-	else
+		result = 1 * result;
+	while (n > 0)
 	{
-		for (i = n; i > 0; i--)
-		{
-			result = result * i;
-		}
+	result = result * n;
+	n--;
+	factorial(n);
 	}
 	return (result);
 }
