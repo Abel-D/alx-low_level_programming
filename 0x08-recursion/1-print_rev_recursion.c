@@ -5,12 +5,13 @@
  */
 void _print_rev_recursion(char *s)
 {
-	int i;
 	int length = strlen(s);
 
-	for (i = length; i >= 0; i--)
+	while (length >= 0)
 	{
-		putchar(s[i]);
+		putchar(*s);
+		length--;
+		s--;
 	}
 	putchar('\n');
 }
