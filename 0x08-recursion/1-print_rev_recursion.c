@@ -5,14 +5,10 @@
  */
 void _print_rev_recursion(char *s)
 {
-	int i = 0;
+	int i;
+	int length = strlen(s);
 
-	while (*s != '\0')
-	{
-		i++;
-		s++;
-	}
-	for (; i >= 0; i--)
+	for (i = length; i >= 0; i--)
 	{
 		putchar(s[i]);
 	}
