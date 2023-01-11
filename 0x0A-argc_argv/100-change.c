@@ -3,7 +3,7 @@
 /**
  * main - calculates min change amount
  * @argc: no of paramss
- * @argv[]: array of params
+ * @argv: array of params
  *
  * Return: 1 if error
  */
