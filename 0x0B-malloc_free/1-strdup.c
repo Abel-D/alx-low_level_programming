@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _strdup - 
+ * _strdup - copy string to new loc
  * @str: input
  *
  * Return: char ptr
