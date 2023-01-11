@@ -9,22 +9,27 @@
  * Return: 0 if success
  */
 int main(int argc, char *argv[])
-{
+0{0004
 	int res = 0;
 	int i = 1;
+	int x;
 
 	while (i <= argc)
 	{
-	if (isdigit(argv[i][0]))
-	{
-		res = res + atoi(argv[i]);
-	}
-	else
-	{
-		printf("%s\n", "Error");
-		break;
-	}
-		i++;
+		x = scanf("%c",argv[i]);
+
+		if (x != 1)
+		{
+			res = res + atoi(argv[i]);
+		}
+		else
+		{
+			printf("%s\n", "Error");
+
+			break;
+		}
+			res = res + atoi(argv[i]);
+			i++;
 	}
 
 	printf("%d\n", res);
